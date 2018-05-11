@@ -1,0 +1,59 @@
+// main styles
+
+main {
+  button {
+    padding: 1.7% 0;
+    width: 70%;
+    border-radius: 5px;
+    font-size: 1.3rem;
+    background: rgba(0, 0, 0, 0.801);
+    color: #F8FAFC;
+    margin: 1.7% 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px #421919;
+    font-family: $button-font;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+  }
+  .textDisplayButtons {
+    display: flex;
+    margin-top: 5%;
+    justify-content: space-between;
+    width: 70%;
+    button {
+      width: 49%;
+    }
+  }
+  #sentenceButton, #paragraphButton {
+    text-transform: capitalize;
+  }
+  #sentenceButton {
+    border: 5px solid $morty-secondary;
+    background: rgba($morty-primary, 0.8);
+    color: $morty-alt;
+  }
+  #paragraphButton {
+    border: 5px solid $rick-primary;
+    background: rgba($rick-secondary, 0.8);
+  }
+}
+
+// media breakpoints
+
+@media (max-width: $laptop){
+
+}
+
+@media (max-width: $tablet){
+
+}
+
+@media (max-width: $mobile){
+
+}
