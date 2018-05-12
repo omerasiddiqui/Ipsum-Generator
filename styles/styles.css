@@ -200,7 +200,6 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: fixed;
   color: white; }
 
 header {
@@ -281,7 +280,8 @@ main button {
   font-family: rickandmortybody;
   font-size: 1.7rem;
   padding: 0 4%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
 
 .displayIpsumText {
   /* border: 1px solid yellow; */
