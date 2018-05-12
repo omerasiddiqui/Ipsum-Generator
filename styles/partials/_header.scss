@@ -56,6 +56,9 @@ header {
 }
 
 @media (max-width: $mobile){
+  body {
+    height: 110vh;
+  }
   .wrapper {
     width: 90%;
   }
@@ -66,8 +69,6 @@ header {
     }
     h2 {
       font-size: 2.0rem;
-      margin-bottom: 18%;
-
     }
   }
 }
