@@ -27,7 +27,7 @@ main {
   margin: 2rem auto;
   /* border: 1px solid red; */
   font-family: $body-font;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   padding: 0 4%;
   margin: 0 auto;
   text-align: center;
@@ -52,12 +52,12 @@ main {
   font-weight: bold;
 }
 #sentenceButton {
-  border: 5px solid $morty-secondary;
+  border: 5px solid lighten($morty-secondary, 20%);
   background: rgba($morty-primary, 0.8);
   color: $morty-alt;
 }
 #paragraphButton {
-  border: 5px solid $rick-primary;
+  border: 5px solid lighten($logo-primary, 30%);
   background: rgba($rick-secondary, 0.8);
   margin-bottom: 20%;
 }
@@ -72,6 +72,8 @@ main {
     main {
       button {
         font-size: 1.4rem;
+        width: 75%;
+        padding: 3.5% 0;
       }
     }
 }
@@ -79,8 +81,11 @@ main {
 @media (max-width: $tablet){
   main {
     button {
-      font-size: 1.2rem;
+      padding: 8% 0;
     }
+    /* #sentenceButton, #paragraphButton {
+      width: 75%;
+    } */
   }
 }
 

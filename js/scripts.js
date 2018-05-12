@@ -81,22 +81,33 @@ copy = $('#copyButton'), back = $('#backButton');
       "You’re a monster. You’re like Hitler but even Hitler cared about Germany or something!"
     ]
 
-    const RandomRickQuote = () => rickLinesArray[Math.floor(Math.random() * rickLinesArray.length)];
-    let num = Math.floor(Math.random() * (8 - 3 + 1) + 3)
-    let rickLinesParagraph = "";
+
+
 
 // run loop through rick's array and output a random line from the array
 // then concatenate random number of rick's lines together
 // and change HTML of div.words to the sentence/paragraph
 
-for(let i = 0; i < num; i++){
-  rickLinesParagraph += RandomRickQuote() + ' ';
+function generateParagraph() {
+  const RandomRickQuote = () => rickLinesArray[Math.floor(Math.random() * rickLinesArray.length)];
+  let rickLinesParagraph = "";
+  let num = Math.floor(Math.random() * (8 - 3 + 1) + 3);
+
+  for(let i = 0; i < num; i++){
+    rickLinesParagraph += RandomRickQuote() + ' ';
+  }
+  return rickLinesParagraph;
 }
 
 document.getElementById("paragraphButton").onclick = function() {
-  document.getElementById("words").innerHTML = rickLinesParagraph;
+  console.log('riickityrick');
+  document.getElementById("words").innerHTML = generateParagraph();
 }
 
+// document.getElementById("paragraphButton").onclick = test();
+
 document.getElementById("sentenceButton").onclick = function() {
-  document.getElementById("words").innerHTML = mortyLinesArray[num];;
+  let num = Math.floor(Math.random() * (8 - 3 + 1) + 3);
+
+  document.getElementById("words").innerHTML = mortyLinesArray[num];
 }
