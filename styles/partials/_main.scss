@@ -84,7 +84,8 @@ main {
   }
   main {
     button {
-      padding: 8% 0;
+      padding: 6.5% 0;
+      font-size: 1.4rem;
     }
   }
 }
@@ -92,6 +93,9 @@ main {
 @media (max-width: $mobile){
   .textDisplay {
     font-size: 1.15rem;
+  }
+  #paragraphButton {
+    margin-bottom: 25%;
   }
 
 }
