@@ -239,8 +239,6 @@ header {
     font-size: 2.0rem; } }
 
 @media (max-width: 480px) {
-  body {
-    height: 110vh; }
   .wrapper {
     width: 90%; }
   header h1 {
