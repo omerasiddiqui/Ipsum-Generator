@@ -189,17 +189,18 @@ summary {
   width: 70%;
   max-width: 1080px; }
 
+.hide {
+  display: none !important; }
+
 /* fonts */
 /* colors */
 /* media breakpoints */
-/* $heading-font: 'Mirza', cursive;
-$body-font: 'Josefin Sans', sans-serif; */
 body {
   background: url(../assets/rickandmorty.png);
-  height: 100vh;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: fixed;
   color: white; }
 
 header {
@@ -219,8 +220,9 @@ header {
     text-transform: uppercase;
     margin-bottom: 0.5%; }
   header h2 {
-    font-size: 2.5rem;
-    font-family: rickandmortybody; }
+    font-size: 3.5rem;
+    font-family: rickandmortybody;
+    margin: 4% auto 0; }
 
 @media (max-width: 1000px) {
   header h1 {
@@ -228,17 +230,26 @@ header {
   header h2 {
     margin-bottom: 0; } }
 
-@media (max-width: 480px) {
+@media (max-width: 800px) {
   header h1 {
-    font-size: 4.0rem; }
+    font-size: 5.0rem; }
+  header h2 {
+    font-size: 2.2rem; } }
+
+@media (max-width: 480px) {
+  .wrapper {
+    width: 90%; }
+  header h1 {
+    font-size: 4.0rem;
+    margin-top: 15%; }
   header h2 {
     font-size: 2.0rem; } }
 
 main button {
   padding: 1.7% 0;
-  width: 70%;
+  width: 50%;
   border-radius: 5px;
-  font-size: 1.3rem;
+  font-size: 1.6rem;
   background: rgba(0, 0, 0, 0.801);
   color: #F8FAFC;
   margin: 1.7% 0;
@@ -247,7 +258,7 @@ main button {
   box-shadow: 1px 1px 8px #421919;
   font-family: rickandmortyalt; }
 
-main .buttons {
+.buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,26 +275,54 @@ main .buttons {
   -ms-flex-direction: column;
   flex-direction: column; }
 
-main .textDisplayButtons {
+.textDisplay {
+  margin: 2rem auto;
+  /* border: 1px solid red; */
+  font-family: rickandmortybody;
+  font-size: 1.7rem;
+  padding: 0 4%;
+  margin: 0 auto; }
+
+.displayIpsumText {
+  /* border: 1px solid yellow; */
+  padding: 2% 4%; }
+
+.textDisplayButtons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 5%;
+  margin: 0 auto 5%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 70%; }
-  main .textDisplayButtons button {
+  .textDisplayButtons button {
     width: 49%; }
 
-main #sentenceButton, main #paragraphButton {
-  text-transform: capitalize; }
+.words {
+  margin: 0.5% auto; }
 
-main #sentenceButton {
+#sentenceButton, #paragraphButton {
+  font-weight: bold; }
+
+#sentenceButton {
   border: 5px solid #24325F;
   background: rgba(250, 253, 124, 0.8);
   color: #FB6467; }
 
-main #paragraphButton {
+#paragraphButton {
   border: 5px solid #B7E4F9;
-  background: rgba(130, 73, 30, 0.8); }
+  background: rgba(130, 73, 30, 0.8);
+  margin-bottom: 20%; }
+
+.c-137 {
+  font-family: rickandmortybody;
+  font-size: 1.7rem; }
+
+@media (max-width: 1000px) {
+  main button {
+    font-size: 1.4rem; } }
+
+@media (max-width: 800px) {
+  main button {
+    font-size: 1.2rem; } }

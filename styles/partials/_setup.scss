@@ -18,11 +18,12 @@ button,hr,input{overflow:visible}audio,canvas,progress,video{display:inline-bloc
 @font-face { font-family: rickandmortyalt; src: url('../assets/rickandmortyalt.ttf'); }
 @font-face { font-family: adultswim; src: url('../assets/adultswim.ttf'); }
 
-
-
-
 .wrapper {
   margin: 0 auto;
   width: 70%;
   max-width: 1080px;
+}
+
+.hide {
+  display: none !important;
 }
