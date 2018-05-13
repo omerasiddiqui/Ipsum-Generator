@@ -99,7 +99,6 @@ function generateParagraph() {
       randomIndices.push(random)
     }
   }
-
   for (let i = 0; i < randomIndices.length; i++) {
     rickLinesParagraph += rickLinesArray[randomIndices[i]];
   }
@@ -111,10 +110,7 @@ document.getElementById("paragraphButton").onclick = function() {
   document.getElementById("words").innerHTML = generateParagraph();
 }
 
-// document.getElementById("paragraphButton").onclick = test();
-
 document.getElementById("sentenceButton").onclick = function() {
   let num = Math.floor(Math.random() * mortyLinesArray.length);
-
   document.getElementById("words").innerHTML = mortyLinesArray[num];
 }
