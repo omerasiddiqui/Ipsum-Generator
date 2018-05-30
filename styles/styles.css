@@ -201,7 +201,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   color: white;
-  height: 100%; }
+  height: 100vh; }
 
 header {
   display: -webkit-box;
@@ -302,8 +302,11 @@ main button {
   .textDisplayButtons button {
     width: 49%; }
 
-.words {
-  margin: 0.5% auto; }
+#words {
+  margin: 0.5% auto;
+  background: rgba(0, 0, 0, 0.801);
+  border-radius: 30px;
+  padding: 30px; }
 
 #sentenceButton, #paragraphButton {
   font-weight: bold; }
@@ -332,11 +335,12 @@ main button {
   .textDisplay {
     font-size: 1.47rem; }
   main button {
-    padding: 6.5% 0;
-    font-size: 1.4rem; } }
+    font-size: 1.1rem; margin: 0;} }
 
 @media (max-width: 480px) {
   .textDisplay {
     font-size: 1.15rem; }
   #paragraphButton {
-    margin-bottom: 15%; } }
+    margin-bottom: 15%; }
+  .textDisplayButtons {
+    margin: 0 auto 15%; } }

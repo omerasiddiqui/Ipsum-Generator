@@ -45,7 +45,7 @@ main {
     width: 49%;
   }
 }
-.words {
+#words {
   margin: 0.5% auto;
 }
 #sentenceButton, #paragraphButton {
@@ -96,6 +96,9 @@ main {
   }
   #paragraphButton {
     margin-bottom: 15%;
+  }
+  .textDisplayButtons {
+    margin: 0 auto 15%;
   }
 
 }
