@@ -100,13 +100,12 @@ function generateParagraph() {
     }
   }
   for (let i = 0; i < randomIndices.length; i++) {
-    rickLinesParagraph += rickLinesArray[randomIndices[i]];
+    rickLinesParagraph += rickLinesArray[randomIndices[i]] + " ";
   }
   return rickLinesParagraph;
 }
 
 document.getElementById("paragraphButton").onclick = function() {
-  console.log('riickityrick');
   document.getElementById("words").innerHTML = generateParagraph();
 }
 
