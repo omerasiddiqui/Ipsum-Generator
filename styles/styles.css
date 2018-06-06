@@ -348,6 +348,9 @@ main button {
     font-size: 1.1rem; margin: 0;} }
 
 @media (max-width: 480px) {
+  body {
+    height: 121vh;
+  }
   .textDisplay {
     font-size: 1.15rem; }
   #paragraphButton {
