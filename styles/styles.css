@@ -260,6 +260,10 @@ main button {
   box-shadow: 1px 1px 8px #421919;
   font-family: rickandmortyalt; }
 
+  main button:hover {
+    background: rgba(0,0,0,0.90);
+  }
+
 .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -316,10 +320,16 @@ main button {
   background: rgba(250, 253, 124, 0.8);
   color: #FB6467; }
 
+#sentenceButton:hover {
+  background: rgba(250, 253, 124, 0.98);}
+
 #paragraphButton {
   border: 5px solid #84e5f1;
   background: rgba(130, 73, 30, 0.8);
   margin-bottom: 20%; }
+
+  #paragraphButton:hover {
+  background: rgba(130, 73, 30, 0.98);}
 
 .c-137 {
   font-family: rickandmortybody;

@@ -13,6 +13,9 @@ main {
     box-shadow: 1px 1px 8px #421919;
     font-family: $button-font;
   }
+  &:hover {
+    background: rgba(0,0,0,0.95);
+  }
 }
 
 .buttons {
