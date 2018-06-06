@@ -27,6 +27,8 @@ back.click(function() {
   paragraph.toggleClass('hide');
   displayText.addClass('hide');
   displayButtons.addClass('hide');
+  $('#copyButton').text("Copy Text")
+
 })
 
 ///////////////////////////////////////////////
@@ -37,6 +39,7 @@ back.click(function() {
 const clipboard = new Clipboard('#copyButton');
 clipboard.on('success', function(e) {
   console.log(e);
+  $('#copyButton').text("TEXT COPIED")
 });
 clipboard.on('error', function(e) {
   console.log(e);
